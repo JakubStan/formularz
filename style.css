@@ -1,0 +1,357 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#first-form .icon-container {
+  max-width: 1700px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-bottom: 150px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 576px) {
+  #first-form .icon-container {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    padding-bottom: 50px;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #first-form .icon-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+#first-form .icon-container .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+@media screen and (max-width: 576px) {
+  #first-form .icon-container .icon {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #first-form .icon-container .icon {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+#first-form .icon-container .icon .content {
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 576px) {
+  #first-form .icon-container .icon .content {
+    text-align: center;
+    padding-left: 0px;
+    max-width: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #first-form .icon-container .icon .content {
+    max-width: 150px;
+  }
+}
+
+#first-form .icon-container .icon .content p {
+  margin-bottom: 10px;
+}
+
+#first-form .icon-container .icon .content .title {
+  font-weight: bold;
+}
+
+#first-form .icon-container .icon .content a {
+  text-decoration: none;
+  color: black;
+}
+
+#first-form .icon-container .icon .content a:hover {
+  color: #e20000;
+}
+
+#first-form .form-container {
+  -webkit-box-shadow: rgba(54, 43, 43, 0.38) 0px 0px 31px;
+          box-shadow: rgba(54, 43, 43, 0.38) 0px 0px 31px;
+  border-radius: 1%;
+  max-width: 1700px !important;
+}
+
+@media screen and (max-width: 576px) {
+  #first-form .form-container {
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #first-form .form-container .mobile-col-direction {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
+}
+
+#first-form .form-container .img-bg {
+  background-image: url("img/Dom.png");
+  background-image: url(img/Dom.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-right-radius: 1%;
+  border-bottom-right-radius: 1%;
+}
+
+@media screen and (max-width: 576px) {
+  #first-form .form-container .img-bg {
+    height: 30vh;
+    background-attachment: fixed;
+  }
+}
+
+#first-form .form-container form {
+  text-align: center;
+}
+
+#first-form .form-container form h2 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #38385f;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#first-form .form-container form p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #38385f;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+#first-form .form-container form .container {
+  text-align: center;
+}
+
+#first-form .form-container form .container .row {
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  #first-form .form-container form .container .row {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #first-form .form-container form .container .col-md-4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+#first-form .form-container form .container input {
+  border-radius: 28px;
+}
+
+#first-form .form-container form .container input:hover, #first-form .form-container form .container input:active, #first-form .form-container form .container input:focus {
+  border: 1px solid #e20000;
+  -webkit-box-shadow: 0 0 0 0.1rem #c4122a;
+          box-shadow: 0 0 0 0.1rem #c4122a;
+}
+
+#first-form .form-container form .container button {
+  background-color: #e20000;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: none !important;
+  border-radius: 28px;
+  padding: 5px 90px;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#first-form .form-container form .container button:hover {
+  color: white;
+  background-color: #ff0808;
+}
+
+#secound-form .form-container {
+  margin-top: 500px;
+  margin-bottom: 200px;
+  max-width: 1700px !important;
+  -webkit-box-shadow: 2px 2px 30px 2px #16151557;
+          box-shadow: 2px 2px 30px 2px #16151557;
+}
+
+#secound-form .form-container .row .left-col {
+  background-color: #ff0808;
+  color: white;
+}
+
+#secound-form .form-container .row .left-col .content {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#secound-form .form-container .row .left-col .content h2 {
+  padding-top: 20px;
+}
+
+#secound-form .form-container .row .left-col .content .icons {
+  text-align: left;
+  margin-top: 60px;
+}
+
+#secound-form .form-container .row .left-col .content .icons .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#secound-form .form-container .row .left-col .content .icons .icon p {
+  margin-bottom: 10px;
+}
+
+#secound-form .form-container .row .left-col .content .icons .icon a {
+  color: white;
+  text-decoration: none;
+}
+
+#secound-form .form-container .row .left-col .content .icons .icon img {
+  border-radius: 50%;
+  border: 2px solid white;
+  width: 70px;
+  margin-right: 20px;
+}
+
+#secound-form .form-container .row .right-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#secound-form .form-container .row .right-col form {
+  text-align: center;
+  width: 100%;
+  margin: 0 40px;
+}
+
+@media screen and (max-width: 576px) {
+  #secound-form .form-container .row .right-col form {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+#secound-form .form-container .row .right-col form h2 {
+  margin-bottom: 50px;
+}
+
+#secound-form .form-container .row .right-col form .row .col-md-4 {
+  margin-top: 40px;
+  margin-top: 40px;
+}
+
+#secound-form .form-container .row .right-col form .row .col-md-4 input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  border-radius: 0px;
+}
+
+#secound-form .form-container .row .right-col form .row .col-md-4 input:hover, #secound-form .form-container .row .right-col form .row .col-md-4 input:active, #secound-form .form-container .row .right-col form .row .col-md-4 input:focus {
+  border-bottom: 1px solid #ff0808;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#secound-form .form-container .row .right-col form .form-btn {
+  color: white;
+  background-color: #ff0808;
+  border: 2px solid #ff0808;
+  border-radius: 0px;
+  text-transform: uppercase;
+  padding: 10px 40px;
+  margin-top: 100px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#secound-form .form-container .row .right-col form .form-btn:hover {
+  color: #ff0808;
+  background-color: transparent;
+}
+/*# sourceMappingURL=style.css.map */

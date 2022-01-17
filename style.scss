@@ -1,0 +1,328 @@
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+$font-color:#38385f;
+$red: #e20000;
+$red2: #ff0808;
+
+
+$sm: 576px;
+$md: 768px;
+
+section{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+#first-form{
+
+    .icon-container{
+        max-width: 1700px !important;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 150px;
+        margin-top: 50px;
+
+        @media screen and (max-width: $sm) {
+            flex-direction: column !important;
+            padding-bottom: 50px;
+            display: flex !important;
+            
+        }
+
+        @media screen and (max-width: $md) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr)
+                    
+        }
+        
+
+        .icon{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: start;
+
+            @media screen and (max-width: $sm) {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            @media screen and (max-width: $md) {
+                justify-content: center;
+            }
+
+            .content{
+                padding-left: 15px;
+
+                @media screen and (max-width: $sm) {
+                    text-align: center;
+                    padding-left: 0px;
+                    max-width: none !important;
+                }
+
+                @media screen and (max-width: $md) {
+                    max-width: 150px;
+                }    
+
+                p{
+                    margin-bottom: 10px;           
+                }
+
+                .title{
+                    font-weight: bold;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                    &:hover{
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
+
+    .form-container{
+        box-shadow: rgba(54, 43, 43, 0.38) 0px 0px 31px;
+        border-radius: 1%;
+        max-width: 1700px !important;
+
+
+        @media screen and (max-width: $sm) {
+            margin-bottom: 150px;
+        }
+
+        .mobile-col-direction{
+            @media screen and (max-width: $sm) {        
+                flex-direction: column-reverse!important;        
+            }
+        }
+
+            
+        
+        
+    .img-bg{
+        background-image: url('img/Dom.png');
+        background-image: url(img/Dom.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-top-right-radius: 1%;
+        border-bottom-right-radius: 1%;
+
+        @media screen and (max-width: $sm) {
+            height: 30vh;
+            background-attachment: fixed;                
+        }
+    
+    }
+
+    form{
+        text-align: center;
+
+        h2{
+            font-size: 30px;
+            font-weight: 400;
+            color: $font-color;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        p{
+            font-size: 20px;
+            font-weight: 400;
+            color: $font-color;        
+            margin-bottom: 35px;
+            text-align: center;
+        }
+
+        .container{
+            text-align: center;
+
+            .row{
+                padding-top: 30px;
+
+                @media screen and (max-width: $sm) {
+                    margin: 0px;
+                    padding: 0px;                
+                }
+            }
+
+            .col-md-4{
+                @media screen and (max-width: $sm) {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            input{
+                border-radius: 28px;
+                &:hover, &:active, &:focus{
+                border:  1px solid $red;
+                box-shadow: 0 0 0 0.1rem rgb(196, 18, 42);
+                }
+            }
+
+            button{
+                background-color: $red;
+                margin-top: 50px;
+                margin-bottom: 50px;       
+                border: none!important;
+                border-radius: 28px;
+                padding: 5px 90px;
+                outline: none;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 500;      
+                text-transform: uppercase;
+            
+
+                &:hover{
+                    color: white;
+                    background-color: $red2;
+
+                }
+            
+            }
+        }
+
+
+        }    
+    }
+}
+
+
+
+#secound-form{
+    .form-container{
+        margin-top: 500px;
+        margin-bottom: 200px;
+        max-width: 1700px !important;
+        box-shadow: 2px 2px 30px 2px #16151557;
+
+        .row{
+
+            .left-col{
+                background-color: $red2;
+                color: white;
+                
+                .content{
+                    padding: 40px 20px;
+                    text-align: center;
+
+                    h2{
+                        padding-top: 20px;
+                    }
+
+                    .icons{
+                        text-align: left;
+                        margin-top: 60px;
+                        .icon{
+                            display: flex;
+                            align-items: center;
+
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+
+                            p{
+                                margin-bottom: 10px;
+                            }
+
+                            a{
+                                color: white;
+                                text-decoration: none;
+                            }
+
+                            img{
+                                border-radius: 50%;
+                                border: 2px solid white;
+                                width: 70px;
+                                margin-right: 20px;
+                            }
+                        }
+
+                    }
+                    
+                   
+                }
+            }
+
+            .right-col{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+                  form{
+                    text-align: center;
+                    width: 100%;
+                    margin: 0 40px;
+
+                    @media screen and (max-width: $sm) {
+                      padding-top: 40px;
+                      padding-bottom: 40px;
+                        
+                    }
+
+                    h2{
+                        margin-bottom: 50px;
+                    }
+
+                    .row{
+                        .col-md-4{
+
+                            margin-top: 40px;
+                            margin-top: 40px;
+
+                            input{
+                                border: none;
+                                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                                padding: 0;
+                                border-radius: 0px;
+
+                                &:hover, &:active, &:focus{
+                                border-bottom: 1px solid $red2;
+                                box-shadow: none;  
+                                }
+                            }
+                        }
+                    }
+
+                    .form-btn{
+                        color: white;
+                        background-color: $red2;
+                        border: 2px solid $red2;
+                        border-radius: 0px;
+                        text-transform: uppercase;
+                        padding: 10px 40px;
+                        margin-top: 100px;
+                        font-weight: bold;
+                        font-size: 15px;
+
+                        &:hover{
+                            color: $red2;
+                            background-color: transparent;
+                        }
+                    }
+
+                }                
+            }
+
+        }
+
+    }
+    
+
+}
